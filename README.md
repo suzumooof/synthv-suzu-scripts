@@ -5,26 +5,28 @@ Synthesizer V Studio で利用可能な自作のスクリプト集です。
 
 お試しのついでにいくつか作ってみたので公開します。
 
-## 動作環境
+## 🔽 ダウンロード
+
+<img src="https://img.shields.io/badge/version-1.0.0-green.svg">
+
+[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.0/SynthVSuzuScripts1.0.0.zip)
+
+## 💻 インストール方法
+
+Synthesizer V Studio のスクリプトフォルダにスクリプトファイルをコピーしてください。
+
+その後、本体のスクリプトメニューから再スキャンを選ぶとスクリプトが利用可能になります。
+
+## 🧰 動作環境
 
 Windows版のSynthesizer V Studio Ver.1.0.5で動作確認しています。
 バージョンの違いによってスクリプトの互換性が無くなる可能性があります。
 
 スクリプトの利用によってエラーなどのトラブルが起こる可能性もある為、事前にプロジェクトファイルの保存を行っておく事をお勧めします。
 
-## ダウンロード
+## 🎁 収録スクリプトの紹介
 
-只今準備中
-
-## インストール方法
-
-Synthesizer V Studio のスクリプトフォルダにスクリプトファイルをコピーしてください。
-
-その後、本体のスクリプトメニューから再スキャンを選ぶとスクリプトが利用可能になります。
-
-## 収録スクリプトの紹介
-
-- ### 再生関連 (playback)
+- ### ▶ 再生関連 (playback)
 
     - #### フレーズのリピート再生 (RepeatPlayOfCurrentPhrase.js)
       
@@ -45,7 +47,7 @@ Synthesizer V Studio のスクリプトフォルダにスクリプトファイ�
     
       >現在選択中のノートやグループの置かれている範囲をリピート再生します。
 
-- ### ノート編集関連 (editNote)
+- ### ⭐ ノート編集関連 (editNote)
 
     - #### 選択ノートを複数音素で絞り込み (FilterNoteWithMultiplePhonemes.js)
     
@@ -73,18 +75,29 @@ Synthesizer V Studio のスクリプトフォルダにスクリプトファイ�
       もし複数のノートが選択されている場合は一括で変更します。
       長さの数値は10刻みで20から180までの範囲で設定可能です。
 
-## ショートカットキー登録について (SynthV Ver.1.0.5)
+## ⌨ ショートカットキー登録について (SynthV Ver.1.0.5)
 
 Synthesizer V StudioのVer.1.0.5はショートカットキー関連でいくつか不具合があるようです。
+
 スクリプトに登録したキーが再起動後にリセットされる場合があるので、そのときは再度登録してあげてください。
-    
+
+## ⚠ 注意事項
+
+- スクリプトの利用は自己責任でお願いします。
+
+- スクリプトの利用によって起きた問題については、Synthesizer Vの開発元や販売元にはお問い合わせを行わないようにお願いします。
+
+## 📕 更新履歴
+
+- 2020/8/22 - Ver.1.0.0 初版公開。
+
+## 📩 連絡先
+
+- スズモフのTwitter - https://twitter.com/suzu_dov
+
 ## Licence
 
 - Copyright (c) 2020 スズモフ
 - Released under the MIT license
 - https://opensource.org/licenses/mit-license.php
     
-## 連絡先
-
-作者(スズモフ)のTwitter
-- https://twitter.com/suzu_dov
