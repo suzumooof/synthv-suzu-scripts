@@ -5,6 +5,10 @@ Synthesizer V Studio で利用可能な自作のスクリプト集です。
 
 お試しのついでにいくつか作ってみたので公開します。
 
+[![](https://user-images.githubusercontent.com/70054457/90955074-3d7c6f00-e4b5-11ea-84fd-49d3a2c23995.jpg)](http://www.youtube.com/watch?v=pogybmk_VyU "スクリプトの紹介動画")
+
+[スクリプトの簡単な紹介動画(Youtube)](http://www.youtube.com/watch?v=pogybmk_VyU)
+
 ## 🔽 ダウンロード
 
 <img src="https://img.shields.io/badge/version-1.0.0-green.svg">
