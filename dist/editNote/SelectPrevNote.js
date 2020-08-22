@@ -48,37 +48,39 @@ function searchNoteOnGroupByBlick(onset, ref) {
     var group = ref.getTarget();
     var borderBlickOnGroup = onset - ref.getOnset();
     var noteCount = group.getNumNotes();
-    // ブリック位置に一番近いノートを探す
-    var noteLeft = 0;
-    var noteRight = noteCount;
-    var noteIndex = Math.floor((noteRight - noteLeft) / 2);
-    var currentNote;
-    while (noteLeft < noteRight - 1) {
-        currentNote = group.getNote(noteIndex);
-        if (borderBlickOnGroup < currentNote.getOnset()) {
-            noteRight = noteIndex;
-            noteIndex -= Math.floor((noteRight - noteLeft) / 2);
+    if (noteCount > 0) {
+        // ブリック位置に一番近いノートを探す
+        var noteLeft = 0;
+        var noteRight = noteCount;
+        var noteIndex = Math.floor((noteRight - noteLeft) / 2);
+        var currentNote = void 0;
+        while (noteLeft < noteRight - 1) {
+            currentNote = group.getNote(noteIndex);
+            if (borderBlickOnGroup < currentNote.getOnset()) {
+                noteRight = noteIndex;
+                noteIndex -= Math.floor((noteRight - noteLeft) / 2);
+            }
+            else {
+                noteLeft = noteIndex;
+                noteIndex += Math.floor((noteRight - noteLeft) / 2);
+            }
+        }
+        // 位置が完全一致するか調べる
+        currentNote = group.getNote(noteLeft);
+        var currentOnset = currentNote.getOnset();
+        if (borderBlickOnGroup <= currentOnset) {
+            // 完全一致するかそれよりも手前だったらそのノートを返す
+            return currentNote;
+        }
+        else if (noteLeft + 1 < noteCount) {
+            // 異なる場合はその後ろのノートを返す
+            return group.getNote(noteLeft + 1);
         }
         else {
-            noteLeft = noteIndex;
-            noteIndex += Math.floor((noteRight - noteLeft) / 2);
+            // 後ろにノートが無い場合は検索に失敗
         }
     }
-    // 位置が完全一致するか調べる
-    currentNote = group.getNote(noteLeft);
-    var currentOnset = currentNote.getOnset();
-    if (borderBlickOnGroup <= currentOnset) {
-        // 完全一致するかそれよりも手前だったらそのノートを返す
-        return currentNote;
-    }
-    else if (noteLeft + 1 < noteCount) {
-        // 異なる場合はその後ろのノートを返す
-        return group.getNote(noteLeft + 1);
-    }
-    else {
-        // 後ろにノートが無い場合は検索に失敗
-        return undefined;
-    }
+    return undefined;
 }
 /**
  * SynthesizerVでスクリプトが実行されるときに呼び出される関数。
