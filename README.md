@@ -11,9 +11,9 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.0-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.1-green.svg"> (2020/8/23更新)
 
-[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.0/SynthVSuzuScripts1.0.0.zip)
+[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.1/SynthVSuzuScripts1.0.1.zip)
 
 ## 💻 インストール方法
 
@@ -95,6 +95,8 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 - スクリプトの改造や再配布などはライセンスの範囲であればご自由に行ってもらって大丈夫です。
 
 ## 📕 更新履歴
+
+- 2020/8/22 - Ver.1.0.1 空のグループでエラーが起きる問題と再生停止時に音がプツッと鳴る問題の修正。
 
 - 2020/8/22 - Ver.1.0.0 初版公開。
 
