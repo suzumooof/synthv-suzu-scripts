@@ -1,0 +1,10 @@
+{
+    "name": "@suzumof/synthv-suzu-scripts",
+    "author": "suzumof",
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/suzumof/synthv-suzu-scripts.git"
+    },
+    "license": "MIT"
+}
