@@ -22,15 +22,15 @@ var scriptConfig = {
     /**
      * パラメータを移す際のグループ前のチェック範囲です。
      * グループ前の指定した区間に制御点が書き込まれている場合は一緒に移します。
-     * 初期値は 0.25 (拍) です。
+     * 初期値は 0.5 (拍) です。
      */
-    paddingBeforeBeat: 0.25,
+    paddingBeforeBeat: 0.5,
     /**
      * パラメータを移す際のグループ後のチェック範囲です。
      * グループ後の指定した区間に制御点が書き込まれている場合は一緒に移します。
-     * 初期値は 0.25 (拍) です。
+     * 初期値は 0.5 (拍) です。
      */
-    paddingAfterBeat: 0.25,
+    paddingAfterBeat: 0.5,
 };
 /**
  * スクリプトの情報を返します。
@@ -330,6 +330,32 @@ function main() {
                 parentAutomation.add(groupStart + groupDuration, parameterDefs.defaultValue);
                 if (parentAfterValue !== parameterDefs.defaultValue) {
                     parentAutomation.add(groupStart + groupDuration + 1, parentAfterValue);
+                }
+                // 子グループで同じ数値の制御点が連続する場合は削除
+                var childPoints = childAutomation_1.getAllPoints();
+                if (childPoints.length >= 2) {
+                    var pointIndex = 1;
+                    var prevPoint = childPoints[0];
+                    var currentPoint = void 0;
+                    while (pointIndex < childPoints.length) {
+                        currentPoint = childPoints[pointIndex];
+                        if (prevPoint[1] !== currentPoint[1]) {
+                            break;
+                        }
+                        prevPoint = currentPoint;
+                        pointIndex++;
+                    }
+                    pointIndex = childPoints.length - 2;
+                    prevPoint = childPoints[pointIndex + 1];
+                    while (pointIndex >= 0) {
+                        currentPoint = childPoints[pointIndex];
+                        if (prevPoint[1] !== currentPoint[1]) {
+                            break;
+                        }
+                        childAutomation_1.remove(prevPoint[0]);
+                        prevPoint = currentPoint;
+                        pointIndex--;
+                    }
                 }
             }
         });

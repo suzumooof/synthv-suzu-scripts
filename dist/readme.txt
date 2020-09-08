@@ -4,7 +4,7 @@
 Synthesizer V Studio 用のスクリプト集。
 
 製作者名  ：スズモフ
-バージョン：1.0.4
+バージョン：1.0.5
 更新日    ：2020/9/9
 
 https://twitter.com/suzu_dov
@@ -119,7 +119,7 @@ su_zu_mof@hotmail.com
 【更新履歴】
 
 
-2020/9/9　ver.1.0.4
+2020/9/9　ver.1.0.5
 
 ・PackParameterToGroup.jsを追加。
 ・CopyTrack.jsを追加。
