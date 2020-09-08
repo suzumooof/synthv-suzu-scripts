@@ -11,9 +11,12 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.2-green.svg"> (2020/9/9更新)
+<img src="https://img.shields.io/badge/version-1.0.2-green.svg">
 
-[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip)
+[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip)
+ 
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip "SynthV用スクリプトのダウンロード")
+
 
 ## 💻 インストール方法
 
