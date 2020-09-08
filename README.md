@@ -11,11 +11,11 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.2-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.3-green.svg">
 
-[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip)
+[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.3/SynthVSuzuScripts1.0.3.zip)
  
-[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip "SynthV用スクリプトのダウンロード")
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.3/SynthVSuzuScripts1.0.3.zip "SynthV用スクリプトのダウンロード")
 
 
 ## 💻 インストール方法
@@ -93,6 +93,10 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
        そしてグループの移動やコピーを行う事でノートとパラメータをセットで管理できます。
        グループ化されたままだと不便な場合は、移動やコピーを行ったあとにグループの解除をしてください。
 
+    - #### トラックの複製 (CopyTrack.js)
+      
+      >現在選択中のトラックを複製します。トラック名も同じになるので、必要に応じてあとから書き換えて下さい。
+
 ## ⚠ 注意事項
 
 - スクリプトの利用は自己責任でお願いします。
@@ -103,7 +107,7 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 
 ## 📕 更新履歴
 
-- 2020/9/9 - Ver.1.0.2 - 「パラメータをグループ内に移す」のスクリプトを追加。
+- 2020/9/9 - Ver.1.0.3 - 「パラメータをグループ内に移す」と「トラックの複製」のスクリプトを追加。
 
 - 2020/8/22 - Ver.1.0.1 - 空のグループでエラーが起きる問題と再生停止時に音がプツッと鳴る問題の修正。
 
