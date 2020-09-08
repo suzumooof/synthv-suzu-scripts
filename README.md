@@ -11,9 +11,9 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.1-green.svg"> (2020/8/23更新)
+<img src="https://img.shields.io/badge/version-1.0.2-green.svg"> (2020/9/9更新)
 
-[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.1/SynthVSuzuScripts1.0.1.zip)
+[SynthV用スクリプトのダウンロード](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.2/SynthVSuzuScripts1.0.2.zip)
 
 ## 💻 インストール方法
 
@@ -23,7 +23,7 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 
 ## 🧰 動作環境
 
-- Windows版のSynthesizer V Studio Pro Ver.1.0.5で動作確認しています。
+- Windows版のSynthesizer V Studio Pro Ver.1.0.8で動作確認しています。
 
 - フリーのBasic版についてはスクリプト機能を利用する事ができません。
 
@@ -80,11 +80,15 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
       もし複数のノートが選択されている場合は一括で変更します。
       長さの数値は20から180までの範囲で設定可能です。
 
-## ⌨ ショートカットキー登録について (SynthV Ver.1.0.5)
-
-- Synthesizer V Studio Ver.1.0.5はショートカットキー関連でいくつか不具合があるようです。
-
-- スクリプトに登録したキーが再起動後にリセットされる場合があるので、そのときは再度登録してあげてください。
+    - #### パラメータをグループ内に移す (PackParameterToGroup.js)
+      
+      >現在選択されているグループの外側に設定されているパラメータを、
+       グループ内に移します。
+       
+      >ノートとパラメータをまとめて動かしたいときは、
+       対象となるノートをグループ化してこのスクリプトを実行します。
+       そしてグループの移動やコピーを行う事でノートとパラメータをセットで管理できます。
+       グループ化されたままだと不便な場合は、移動やコピーを行ったあとにグループの解除をしてください。
 
 ## ⚠ 注意事項
 
@@ -96,9 +100,11 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 
 ## 📕 更新履歴
 
-- 2020/8/22 - Ver.1.0.1 空のグループでエラーが起きる問題と再生停止時に音がプツッと鳴る問題の修正。
+- 2020/9/9 - Ver.1.0.2 - 「パラメータをグループ内に移す」のスクリプトを追加。
 
-- 2020/8/22 - Ver.1.0.0 初版公開。
+- 2020/8/22 - Ver.1.0.1 - 空のグループでエラーが起きる問題と再生停止時に音がプツッと鳴る問題の修正。
+
+- 2020/8/22 - Ver.1.0.0 - 初版公開。
 
 ## 📩 連絡先
 
