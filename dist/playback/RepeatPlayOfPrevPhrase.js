@@ -15,6 +15,10 @@
  * @author スズモフ - https://twitter.com/suzu_dov
  * @version 1.0.0
  */
+/**
+ * スクリプトの設定。
+ * お好みに合わせて数値を書き換えて下さい。
+ */
 var scriptConfig = {
     /**
      * ループ再生時の先頭に追加する空き時間（秒単位）。

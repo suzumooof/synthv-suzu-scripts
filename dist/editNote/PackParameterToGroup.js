@@ -268,11 +268,18 @@ function main() {
         var groupDuration = groupEnd - groupStart;
         parameterTypes.forEach(function (typeName) {
             var parentAutomation = parentGroup.getParameter(typeName);
+            var parameterDefs = parentAutomation.getDefinition();
             var points = parentAutomation.getPoints(groupStart, groupEnd);
-            // 制御点がある場合だけ保存
-            if (points.length >= 1) {
+            // グループの周囲でパラメータが変更されているかどうか
+            var parameterChanged = false;
+            if (parentAutomation.get(groupStart) !==
+                parameterDefs.defaultValue ||
+                parentAutomation.get(groupEnd) !== parameterDefs.defaultValue) {
+                parameterChanged = true;
+            }
+            // 制御点がある場合もしくは前後が初期値以外の場合
+            if (points.length >= 1 || parameterChanged) {
                 var childAutomation_1 = childGroup.getParameter(typeName);
-                var parameterDefs = parentAutomation.getDefinition();
                 // 子グループの制御点の保存
                 var childStartValue = childAutomation_1.get(groupStart - groupOffset);
                 var childEndValue = childAutomation_1.get(groupEnd - groupOffset);

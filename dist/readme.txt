@@ -4,7 +4,7 @@
 Synthesizer V Studio 用のスクリプト集。
 
 製作者名  ：スズモフ
-バージョン：1.0.2
+バージョン：1.0.3
 更新日    ：2020/9/9
 
 https://twitter.com/suzu_dov
@@ -79,6 +79,9 @@ Synthesizer V Studio のスクリプトフォルダに利用するスクリプ�
   グループ内に移します。
   ノートとパラメータをまとめて移動・コピーしたい時に役立ちます。
 
+・editNote/CopyTrack.js
+  現在選択中のトラックを複製します。
+
 
 
 【動作環境】
@@ -116,9 +119,10 @@ su_zu_mof@hotmail.com
 【更新履歴】
 
 
-2020/9/9　ver.1.0.2
+2020/9/9　ver.1.0.3
 
 ・PackParameterToGroup.jsを追加。
+・CopyTrack.jsを追加。
 ・本体のアップデートに合わせて説明文を一部修正。
 
 
