@@ -11,11 +11,11 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.3-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.5-green.svg">
 
-[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.3/SynthVSuzuScripts1.0.3.zip)
+[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.5/SynthVSuzuScripts1.0.5.zip)
  
-[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.3/SynthVSuzuScripts1.0.3.zip "SynthV用スクリプトのダウンロード")
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.5/SynthVSuzuScripts1.0.5.zip "SynthV用スクリプトのダウンロード")
 
 
 ## 💻 インストール方法
@@ -107,7 +107,7 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 
 ## 📕 更新履歴
 
-- 2020/9/9 - Ver.1.0.3 - 「パラメータをグループ内に移す」と「トラックの複製」のスクリプトを追加。
+- 2020/9/9 - Ver.1.0.5 - 「パラメータをグループ内に移す」と「トラックの複製」のスクリプトを追加。
 
 - 2020/8/22 - Ver.1.0.1 - 空のグループでエラーが起きる問題と再生停止時に音がプツッと鳴る問題の修正。
 
