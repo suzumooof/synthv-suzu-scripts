@@ -261,9 +261,15 @@ function main() {
             var prevEdge = prevPair.onset + prevPair.note.getDuration();
             groupStart = Math.max((groupStart + prevEdge) / 2, groupStart - SV.QUARTER * scriptConfig.paddingBeforeBeat);
         }
+        else {
+            groupStart -= SV.QUARTER * scriptConfig.paddingBeforeBeat;
+        }
         if (nextPair !== undefined) {
             var nextEdge = nextPair.onset;
             groupEnd = Math.min((groupEnd + nextEdge) / 2, groupEnd + SV.QUARTER * scriptConfig.paddingAfterBeat);
+        }
+        else {
+            groupEnd += SV.QUARTER * scriptConfig.paddingBeforeBeat;
         }
         var groupDuration = groupEnd - groupStart;
         parameterTypes.forEach(function (typeName) {
@@ -280,6 +286,7 @@ function main() {
             // 制御点がある場合もしくは前後が初期値以外の場合
             if (points.length >= 1 || parameterChanged) {
                 var childAutomation_1 = childGroup.getParameter(typeName);
+                var tempValue = void 0;
                 // 子グループの制御点の保存
                 var childStartValue = childAutomation_1.get(groupStart - groupOffset);
                 var childEndValue = childAutomation_1.get(groupEnd - groupOffset);
@@ -290,23 +297,40 @@ function main() {
                 // 親グループの制御点の保存
                 var parentBeforeValue = parentAutomation.get(groupStart - 1);
                 var parentAfterValue = parentAutomation.get(groupStart + groupDuration + 1);
-                // 子グループの値の再設定
+                // 子グループの開始位置直前の値の再設定
                 childAutomation_1.add(groupStart - groupOffset - 1, parameterDefs.defaultValue);
-                childAutomation_1.add(groupStart - groupOffset, childStartValue + parentAutomation.get(groupStart));
+                // 子グループの開始位置の値の再設定
+                tempValue = childStartValue + parentAutomation.get(groupStart);
+                if (tempValue !== parameterDefs.defaultValue) {
+                    childAutomation_1.add(groupStart - groupOffset, tempValue);
+                }
+                // 子グループの制御点の再設定
                 points.forEach(function (pointPair, index) {
                     childAutomation_1.add(pointPair[0] - groupOffset, childParamList_1[index] + pointPair[1]);
                 });
-                childAutomation_1.add(groupEnd - groupOffset, childEndValue +
-                    parentAutomation.get(groupStart + groupDuration));
+                // 子グループの終了位置の値の再設定
+                tempValue =
+                    childEndValue +
+                        parentAutomation.get(groupStart + groupDuration);
+                if (tempValue !== parameterDefs.defaultValue) {
+                    childAutomation_1.add(groupEnd - groupOffset, tempValue);
+                }
+                // 子グループの終了位置直後の値の再設定
                 childAutomation_1.add(groupEnd - groupOffset + 1, parameterDefs.defaultValue);
-                // 親グループの値の再設定
+                // 親グループの制御点の削除
                 points.forEach(function (pointPair, index) {
                     parentAutomation.remove(pointPair[0]);
                 });
-                parentAutomation.add(groupStart - 1, parentBeforeValue);
+                // 親グループの開始位置の値の再設定
                 parentAutomation.add(groupStart, parameterDefs.defaultValue);
+                if (parentBeforeValue !== parameterDefs.defaultValue) {
+                    parentAutomation.add(groupStart - 1, parentBeforeValue);
+                }
+                // 親グループの終了位置の値の再設定
                 parentAutomation.add(groupStart + groupDuration, parameterDefs.defaultValue);
-                parentAutomation.add(groupStart + groupDuration + 1, parentAfterValue);
+                if (parentAfterValue !== parameterDefs.defaultValue) {
+                    parentAutomation.add(groupStart + groupDuration + 1, parentAfterValue);
+                }
             }
         });
     });
