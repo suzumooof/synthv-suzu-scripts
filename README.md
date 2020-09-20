@@ -11,11 +11,11 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.5-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.6-green.svg">
 
-[SynthV用スクリプトのダウンロード (2020/9/9更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.5/SynthVSuzuScripts1.0.5.zip)
+[SynthV用スクリプトのダウンロード (2020/9/20更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.6/SynthVSuzuScripts1.0.6.zip)
  
-[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.5/SynthVSuzuScripts1.0.5.zip "SynthV用スクリプトのダウンロード")
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.6/SynthVSuzuScripts1.0.6.zip "SynthV用スクリプトのダウンロード")
 
 
 ## 💻 インストール方法
@@ -110,6 +110,8 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 - スクリプトの改造や再配布などはライセンスの範囲であればご自由に行ってもらって大丈夫です。
 
 ## 📕 更新履歴
+
+- 2020/9/20 - Ver.1.0.6 - 「パラメータをグループ内に移す」のスクリプトにおいて、ビブラートエンベロープと無声/有声音のパラメータを正しく扱えていなかったのを修正しました。
 
 - 2020/9/9 - Ver.1.0.5 - 「パラメータをグループ内に移す」と「トラックの複製」のスクリプトを追加。
 
