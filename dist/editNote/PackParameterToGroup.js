@@ -300,18 +300,24 @@ function main() {
                 // 子グループの開始位置直前の値の再設定
                 childAutomation_1.add(groupStart - groupOffset - 1, parameterDefs.defaultValue);
                 // 子グループの開始位置の値の再設定
-                tempValue = childStartValue + parentAutomation.get(groupStart);
+                tempValue =
+                    childStartValue +
+                        parentAutomation.get(groupStart) -
+                        parameterDefs.defaultValue;
                 if (tempValue !== parameterDefs.defaultValue) {
                     childAutomation_1.add(groupStart - groupOffset, tempValue);
                 }
                 // 子グループの制御点の再設定
                 points.forEach(function (pointPair, index) {
-                    childAutomation_1.add(pointPair[0] - groupOffset, childParamList_1[index] + pointPair[1]);
+                    childAutomation_1.add(pointPair[0] - groupOffset, childParamList_1[index] +
+                        pointPair[1] -
+                        parameterDefs.defaultValue);
                 });
                 // 子グループの終了位置の値の再設定
                 tempValue =
                     childEndValue +
-                        parentAutomation.get(groupStart + groupDuration);
+                        parentAutomation.get(groupStart + groupDuration) -
+                        parameterDefs.defaultValue;
                 if (tempValue !== parameterDefs.defaultValue) {
                     childAutomation_1.add(groupEnd - groupOffset, tempValue);
                 }
@@ -331,7 +337,7 @@ function main() {
                 if (parentAfterValue !== parameterDefs.defaultValue) {
                     parentAutomation.add(groupStart + groupDuration + 1, parentAfterValue);
                 }
-                // 子グループで同じ数値の制御点が連続する場合は削除
+                // 子グループで同じ数値の制御点が連続する場合は削除;
                 var childPoints = childAutomation_1.getAllPoints();
                 if (childPoints.length >= 2) {
                     var pointIndex = 1;
