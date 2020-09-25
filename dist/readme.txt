@@ -4,8 +4,8 @@
 Synthesizer V Studio 用のスクリプト集。
 
 製作者名  ：スズモフ
-バージョン：1.0.6
-更新日    ：2020/9/20
+バージョン：1.0.7
+更新日    ：2020/9/25
 
 https://twitter.com/suzu_dov
 
@@ -68,6 +68,12 @@ Synthesizer V Studio のスクリプトフォルダに利用するスクリプ�
   現在選択中のノートの直前のノートを選択します。
   編集中以外のグループに含まれるノートは選択対象になりません。
 
+・editNote/SetConsonantPhonemeDuration.js
+  子音の長さ設定
+  現在選択されているノートやグループの子音の長さを-160から+160の範囲で設定します。
+  -80から+80の範囲を超える場合は直前のノートに置かれている母音の長さも変えます。
+  もし複数のノートが選択されている場合は一括で変更します。
+
 ・editNote/SetFirstPhonemeDuration.js
   先頭音素の長さ設定
   現在選択されているノートやグループの先頭音素の長さを設定します。
@@ -117,6 +123,11 @@ su_zu_mof@hotmail.com
 
 
 【更新履歴】
+
+
+2020/9/25　ver.1.0.7
+
+・SetConsonantPhonemeDuration.jsを追加。
 
 
 2020/9/20　ver.1.0.6
