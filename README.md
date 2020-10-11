@@ -11,11 +11,11 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.7-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.8-green.svg">
 
-[SynthV用スクリプトのダウンロード (2020/9/25更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.7/SynthVSuzuScripts1.0.7.zip)
+[SynthV用スクリプトのダウンロード (2020/10/11更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.8/SynthVSuzuScripts1.0.8.zip)
  
-[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.7/SynthVSuzuScripts1.0.7.zip "SynthV用スクリプトのダウンロード")
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.8/SynthVSuzuScripts1.0.8.zip "SynthV用スクリプトのダウンロード")
 
 
 ## 💻 インストール方法
@@ -113,6 +113,18 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
       
       >現在選択中のトラックを複製します。トラック名も同じになるので、必要に応じてあとから書き換えて下さい。
 
+    - #### 選択ノートを一つ下に移動 (DownSelectingNotePitch.js)
+    - #### 選択ノートを一つ上に移動 (UpSelectingNotePitch.js)
+      
+      >選択中のノートを上下に移動します。
+
+    - #### ノート端を再生位置に揃える (FitNoteEdgeToPlayhead.js)
+      
+      >現在の再生位置に合わせて一番近いノート端を揃えます。
+       二つのノート端が重なっている場合はそれらもまとめて揃えてくれます。
+       このスクリプトを同じ位置で二回連続で使った場合は揃える位置がクオンタイズ基準になります。
+       隣り合ったノートを二つだけ選択中の場合は、その間のノート端を優先して揃えます。
+
 ## ⚠ 注意事項
 
 - スクリプトの利用は自己責任でお願いします。
@@ -122,6 +134,8 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 - スクリプトの改造や再配布などはライセンスの範囲であればご自由に行ってもらって大丈夫です。
 
 ## 📕 更新履歴
+
+- 2020/10/11 - Ver.1.0.8 - 「ノート端を再生位置に揃える」「選択ノートを一つ下に移動」「選択ノートを一つ上に移動」スクリプトを追加。
 
 - 2020/9/25 - Ver.1.0.7 - 「子音の長さ設定」スクリプトを追加。
 
