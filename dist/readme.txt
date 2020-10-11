@@ -4,8 +4,8 @@
 Synthesizer V Studio 用のスクリプト集。
 
 製作者名  ：スズモフ
-バージョン：1.0.7
-更新日    ：2020/9/25
+バージョン：1.0.8
+更新日    ：2020/10/11
 
 https://twitter.com/suzu_dov
 
@@ -123,6 +123,13 @@ su_zu_mof@hotmail.com
 
 
 【更新履歴】
+
+
+2020/10/11　ver.1.0.8
+
+・FitNoteEdgeToPlayhead.jsを追加。
+・UpSelectingNotePitch.jsを追加。
+・DownSelectingNotePitch.jsを追加。
 
 
 2020/9/25　ver.1.0.7
