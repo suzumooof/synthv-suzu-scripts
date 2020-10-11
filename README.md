@@ -11,11 +11,11 @@ Synthesizer V Studio のPro版で利用可能な自作のスクリプト集で�
 
 ## 🔽 ダウンロード
 
-<img src="https://img.shields.io/badge/version-1.0.6-green.svg">
+<img src="https://img.shields.io/badge/version-1.0.7-green.svg">
 
-[SynthV用スクリプトのダウンロード (2020/9/20更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.6/SynthVSuzuScripts1.0.6.zip)
+[SynthV用スクリプトのダウンロード (2020/9/25更新)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.7/SynthVSuzuScripts1.0.7.zip)
  
-[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.6/SynthVSuzuScripts1.0.6.zip "SynthV用スクリプトのダウンロード")
+[![](https://user-images.githubusercontent.com/70054457/92500556-4355ac80-f238-11ea-8fa8-80689a4ce543.png)](https://github.com/suzumof/synthv-suzu-scripts/releases/download/v1.0.7/SynthVSuzuScripts1.0.7.zip "SynthV用スクリプトのダウンロード")
 
 
 ## 💻 インストール方法
@@ -77,6 +77,18 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 
       >編集中以外のグループに含まれるノートは選択対象になりません。
     
+    - #### 子音の長さ設定 (SetConsonantPhonemeDuration.js)
+      
+      >現在選択されているノートやグループの子音の長さを設定します。
+      もし複数のノートが選択されている場合は一括で変更します。
+      長さの数値は-160から+160までの範囲で設定可能です。
+      中央の0が通常の子音の長さになります。
+      
+      >もし-80から+80の範囲を超える値を設定した場合は、
+      直前のノートの母音の長さも合わせて変更します。
+
+      >子音の長さは直前の母音の長さにも依存する為、このスクリプトでは直前の母音の長さも一緒に変更します。
+
     - #### 先頭音素の長さ設定 (SetFirstPhonemeDuration.js)
       
       >現在選択されているノートやグループの先頭音素の長さを設定します。
@@ -110,6 +122,8 @@ Synthesizer V Studio Pro のスクリプトフォルダにスクリプトファ�
 - スクリプトの改造や再配布などはライセンスの範囲であればご自由に行ってもらって大丈夫です。
 
 ## 📕 更新履歴
+
+- 2020/9/25 - Ver.1.0.7 - 「子音の長さ設定」スクリプトを追加。
 
 - 2020/9/20 - Ver.1.0.6 - 「パラメータをグループ内に移す」のスクリプトにおいて、ビブラートエンベロープと無声/有声音のパラメータを正しく扱えていなかったのを修正しました。
 
